@@ -1,2 +1,3 @@
 module stringCalculator {
+	requires junit;
 }

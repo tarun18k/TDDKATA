@@ -1,6 +1,6 @@
 package app;
 public class StringCalculator {
-public int add(String numbers)
+public static int add(String numbers)
 {
 	if(numbers.equals("")) {
 		return 0;
