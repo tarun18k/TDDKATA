@@ -7,12 +7,17 @@ public static int add(String numbers)
 	}
 	else {
 		String delimiter=",";
+		if(numbers.matches("//(.*)\n(.*)"))
+		{
+			delimiter=Character.toString(numbers.charAt(2));
+			numbers=numbers.substring(4);
+		}
 		
-		String numberlist[]=numbers.split(","+"|\n");
+		String numberlist[]=numbers.split(delimiter+"|\n");
 		return sum(numberlist);
 	}
 }
-private int sum(String[] numbers) {
+private static int sum(String[] numbers) {
 	int total=0;
 	for(String number:numbers)
 	{
