@@ -1,6 +1,5 @@
 package test;
 
-import org.junit.Test;
 
 import app.stringCalculator;
 import junit.framework.TestCase;
